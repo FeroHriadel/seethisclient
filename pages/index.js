@@ -56,7 +56,7 @@ export default function Home() {
       <div className='main-box'>      
         <div className='img'>
           <Image 
-              src='/images/logo.png' 
+              src='/images/Logo.png' 
               alt='' 
               width='400' 
               height='300' 
