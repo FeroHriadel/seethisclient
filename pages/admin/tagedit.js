@@ -39,7 +39,7 @@ export default function Tagedit() {
                 setTag(data);
                 setMessage('');
             })
-    }, []);
+    }, [tagId]);
 
 
 

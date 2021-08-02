@@ -313,7 +313,7 @@ export default function Editspot({ slug }) {
                         {
                             categories && categories.length < 1
                             ?
-                            <p>There don't seem to be any categories created yet</p>
+                            <p>There dont seem to be any categories created yet</p>
                             :
                             categories.map(c => (
                                 <RedCircle key={c._id}>
@@ -337,7 +337,7 @@ export default function Editspot({ slug }) {
                         {
                             tags && tags.length < 1
                             ?
-                            <p>There don't seem to be any tags created yet</p>
+                            <p>There dont seem to be any tags created yet</p>
                             :
                             tags.map(tag => (
                                 <BlackCircle key={tag._id}>
@@ -415,7 +415,7 @@ export default function Editspot({ slug }) {
 
                     <section className='react-quill-box'>
                         <h3 className='instructions'>Please write something about your spot: </h3>
-                        <p className='info'>You can add images inside your article by clicking the editor's image icon</p>
+                        <p className='info'>You can add images inside your article by clicking the editors image icon</p>
                         <ReactQuill 
                             placeholder='Add text here...'
                             modules={editspot.modules} //see settings below

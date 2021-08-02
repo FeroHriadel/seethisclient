@@ -78,7 +78,7 @@ export default function Allspots({ initialSpots }) {
                             :
                             data.spots.length < 1
                             ?
-                            <p style={{fontFamily: 'IndieFlower', fontSize: '2rem'}}>There don't seem to be any spots created yet</p>
+                            <p style={{fontFamily: 'IndieFlower', fontSize: '2rem'}}>There dont seem to be any spots created yet</p>
                             :
                             data.spots.map(spot => (
                                 <SpotPreview key={spot._id} spot={spot} />

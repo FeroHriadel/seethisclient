@@ -21,7 +21,7 @@ export default function Home() {
       } else {
           setUser(false);
       }
-  }, [state.user]);
+  }, [state, state.user]);
 
 
 

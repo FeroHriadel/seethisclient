@@ -38,7 +38,7 @@ export default function Categoryedit() {
                 setCategory(data);
                 setMessage('');
             })
-    }, []);
+    }, [categoryId]);
 
 
 

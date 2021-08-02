@@ -22,9 +22,10 @@ export default function Map({ spots }) {
 
             {spots && spots.length > 0 && spots.map(spot => (
                 <Marker 
-                position={[spot.lat, spot.long]}
-                draggable={true}
-                animate={true}
+                    key={spot._id}
+                    position={[spot.lat, spot.long]}
+                    draggable={true}
+                    animate={true}
                 >
                     <Popup>
                         <div style={{display: 'flex', alignItems: 'center'}}>

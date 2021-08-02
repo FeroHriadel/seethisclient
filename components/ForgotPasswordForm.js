@@ -50,7 +50,7 @@ export default function ForgotPasswordForm() {
                 <span>Forgot </span> password?
             </Heading>
 
-            <p>Don't worry. Reset it here.</p>
+            <p>Dont worry. Reset it here.</p>
 
             <form>
                 <div className='form-group'>

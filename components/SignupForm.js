@@ -60,7 +60,7 @@ export default function SignupForm() {
     //RENDER
     return (
         <div className='signup-form-container'>
-            <p>Don't have an account?</p>
+            <p>Dont have an account?</p>
             
             <Heading>
                 Sign <span>up</span>

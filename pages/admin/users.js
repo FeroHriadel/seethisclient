@@ -43,7 +43,7 @@ export default function Users() {
                 setMessage('');
             });
         }
-    }, [state.user]);
+    }, [state, state.user]);
 
 
 

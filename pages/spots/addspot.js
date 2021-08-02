@@ -263,7 +263,7 @@ export default function Addspot() {
                         {
                             tags && tags.length < 1
                             ?
-                            <p>There don't seem to be any tags created yet</p>
+                            <p>There dont seem to be any tags created yet</p>
                             :
                             tags.map(tag => (
                                 <BlackCircle key={tag._id}>

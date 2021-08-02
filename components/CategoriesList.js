@@ -43,7 +43,7 @@ export default function CategoriesList() {
                     </li>
                     :
                     categories.map(c => (
-                        <li>
+                        <li key={c._id}>
                             <RedCircle>
                                 <p>{c.name}</p>
                             </RedCircle>
