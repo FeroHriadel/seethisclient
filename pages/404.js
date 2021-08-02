@@ -18,7 +18,7 @@ export default function NotFoundPage() {
                     <span> not found </span> 
                 </Heading>
 
-                <Link href='/'>
+                <Link href='/' passHref>
                     <h2 className='link'>Go Home</h2>
                 </Link>
 
