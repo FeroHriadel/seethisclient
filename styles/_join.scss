@@ -1,0 +1,75 @@
+.join-page {
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-box {
+        width: 90%;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-right: 250px;
+
+        p {
+            font-family: 'IndieFlower';
+            font-size: 2rem;
+            color: var(--black-color-light);
+            margin-top: 2rem;
+        }
+
+        .button-box {
+            margin-top: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+}
+
+
+
+//MEDIA QUERY
+@media (max-width: 1000px) {
+    .join-page .main-box {
+        padding: 0;
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    .join-page {
+        align-items: flex-start;
+        padding-top: 4rem;
+    }
+
+    .join-page p {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+    .join-page .button-box {
+        align-self: center;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .join-page .main-box p {
+        font-size: 1.2rem;
+    }
+}

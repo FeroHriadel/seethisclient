@@ -1,0 +1,101 @@
+.admin-user-list-page {
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 6rem;
+
+        .message {
+            margin-top: 2rem;
+            font-family: 'IndieFlower';
+            color: var(--black-color-light);
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .filter-box {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .users-list {
+            width: 100%;
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            .no-users-message {
+                margin-top: 2rem;
+                font-family: 'IndieFlower';
+                color: var(--black-color-light);
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            .line {
+                width: 100%;
+                display: grid;
+                align-items: center;
+                grid-template-columns: 10fr 1fr 1fr;
+                margin-bottom: 1rem;
+
+                .email, .role {
+                    font-family: 'IndieFlower';
+                    color: var(--black-color-light);
+                    font-size: 1.5rem;
+                    text-align: left;
+                }
+
+                .btn {
+                    font-family: 'Aclonica';
+                    color: var(--black-color-light);
+                    font-size: 1.5rem;
+                    text-align: right;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 860px) {
+    .admin-user-list-page {
+
+        .filter-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    .admin-user-list-page .container .users-list .line {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & > * {
+            text-align: center;
+        }
+    }
+}

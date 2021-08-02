@@ -1,0 +1,132 @@
+.menu-main-box {
+    height: 100vh;
+    min-height: 600px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/*hamburger*/
+.menu-main-box #hamburger {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #333;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    z-index: 12;
+}
+
+.menu-main-box #hamburger div {
+    width: 60%;
+    height: 5px;
+    background: #ddd;
+    position: relative;
+    transition: transform 0.5s linear;
+    border-radius: 2px;
+}
+
+.menu-main-box #hamburger div::before {
+    content: '';
+    height: 5px;
+    width: 100%;
+    background: #ddd;
+    position: absolute;
+    top: -12px;
+    left: 0px;
+    transition: transform 0.5s linear;
+    border-radius: 2px;
+}
+
+.menu-main-box #hamburger div::after {
+    content: '';
+    height: 5px;
+    width: 100%;
+    background: #ddd;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    transition: opacity 0.5s linear;
+    border-radius: 2px;
+}
+
+/*hamburger to X transform*/
+.menu-main-box #checkbox {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+    z-index: 13;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.menu-main-box #checkbox:checked + div div {
+    transform: rotate(135deg);
+} 
+
+.menu-main-box #checkbox:checked + div div::before {
+    transform: rotate(90deg) translate(12px, 0px);
+}
+
+.menu-main-box #checkbox:checked + div div::after {
+    opacity: 0;
+}
+
+
+
+
+/*sphere*/
+.menu-main-box #menu {
+    display: flex; /* important so sphere isn't eliptical*/
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-main-box #sphere {
+    visibility: hidden;
+    width: 200vw;
+    height: 200vh;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 1s linear;
+}
+
+/*sphere animation*/
+.menu-main-box #checkbox:checked + div + div > div {
+    visibility: visible;
+    transform: scale(2);
+}
+
+
+
+
+/*navbar menu*/
+.menu-main-box nav { //nav = <Navbar />     //(bc <Navbar /> component returns <nav> and its children)
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s linear 1s;
+}
+
+/*fade-in navbar menu animation*/
+.menu-main-box #checkbox:checked + div + div > nav {
+    visibility: visible;
+    opacity: 1;
+}

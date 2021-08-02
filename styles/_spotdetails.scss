@@ -1,0 +1,97 @@
+.spot-details-page {
+    width: 100vw;
+    height: 100vh;
+    min-height: 2400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // background: var(--white-color);
+
+    .showcase {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        min-height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+        box-shadow: 0 0 20px #aaa;
+
+        h1 {
+            color: var(--white-color);
+            font-family: 'Aclonica';
+            font-size: 4rem;
+            text-shadow: var(--black-color) -5px 5px 5px;
+            text-align: center;
+        }
+
+        .button-square {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            display: none;
+        }
+    }
+
+    .icons {
+        width: 90%;
+        margin-bottom: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .red-circle {
+            margin: 0.5rem;
+        }
+
+        .black-circle {
+            margin: 0.5rem;
+        }
+    }
+
+    .text {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 8rem;
+        border: 1px #bbb solid;
+        padding: 1rem 0;
+        
+        p, h1, h2, h3, h4, h5, h6, li {
+            font-family: 'IndieFlower';
+            color: var(--black-color-light);
+            width:90%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--black-color);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .map-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 6rem;
+        
+        .map-container {
+            width: 90%;
+            height: 600px;
+            margin-bottom: 4rem;
+        }
+    }
+}

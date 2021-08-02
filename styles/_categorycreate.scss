@@ -1,0 +1,25 @@
+.category-create-page {
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+
+
+@media (max-width: 970px) {
+    .category-create-page .container {
+        align-items: center;
+    }
+}

@@ -1,0 +1,96 @@
+.map-page {
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        margin-top: 6rem;
+        width: 90%;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .pre-title {
+            font-family: 'IndieFlower';
+            font-size: 2rem;
+            color: var(--black-color-light);
+        }
+
+        .message {
+            margin-top: 4rem;
+            font-family: 'IndieFlower';
+            font-size: 2rem;
+            color: var(--red-color);
+            text-align: center;
+            width: 100%;
+        }
+
+        .buttons-and-map-box {
+            margin-top: 6rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .categories-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .bottom-message {
+                display: none;
+            }
+
+            .map-section {
+                width: 600px;
+                height: 500px;
+                //background: rgba(0, 0, 0, 0.267);
+                margin-bottom: 4rem;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .map-page .container {
+        align-items: center;
+
+        .buttons-and-map-box {
+            flex-direction: column;
+            align-items: center;
+
+            .categories-section {
+                margin-bottom: 2rem;
+
+                .button-square {
+                    margin-left: 0;
+                    transform: translateX(-3px);
+                }
+            }
+
+            .bottom-message {
+                display: block;
+                margin: 1rem 0;
+            }
+
+            .map-section {
+                width: 90%;
+            }
+        }        
+    }
+}
+
+
+@media (max-width: 360px) {
+    .map-page .container .pre-title {
+        font-size: 1.5rem;
+    }
+}

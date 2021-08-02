@@ -1,0 +1,259 @@
+.add-spot-page {
+    width: 100vw;
+    height: 100vh;
+    min-height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        & > *:nth-child(1) {
+            margin-top: 6rem;
+        }
+
+        p {
+            font-family: 'IndieFlower';
+            color: var(--black-color-light);
+            font-size: 2rem;
+        }
+
+        .categories-box {
+            margin-top: 10rem;
+            padding-top: 2rem;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+
+            .instructions {
+                position: absolute;
+                top: 1rem;
+                left: 0;
+                font-family: 'Aclonica';
+                color: var(--black-color-light);
+            }
+
+            .red-circle {
+                margin: 1.5rem 1rem 1rem 1rem;
+                cursor: pointer;
+
+                & > * {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .tags-box {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+
+            .instructions {
+                position: absolute;
+                top: 1rem;
+                left: 0;
+                font-family: 'Aclonica';
+                color: var(--black-color-light);
+            }
+
+            .black-circle {
+                margin: 1.5rem 1rem 1rem 1rem;
+                cursor: pointer;
+
+                & > * {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .title-box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 4rem;
+
+            .instructions {
+                font-family: 'Aclonica';
+                color: var(--black-color-light);
+                margin-bottom: 0.5rem;
+            }
+
+            .input-group {
+                position: relative;
+
+                label {
+                    font-family: 'IndieFlower';
+                    color: var(--black-color-light);
+                    font-size: 1.5rem;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+
+                input {
+                    width: 260px;
+                    margin: 0.5rem 0 0 0;
+                    padding: 0;
+                    border: 0;
+                    border-bottom: 1px solid var(--black-color-light);
+                    outline: 0;
+                    background: 0;
+                    font-family: 'IndieFlower';
+                    color: var(--black-color-light);
+                    text-indent: 3.5rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .gps-box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 4rem;
+
+            .instructions {
+                font-family: 'Aclonica';
+                color: var(--black-color-light);
+                margin-bottom: 0.5rem;
+            }
+
+            .input-group {
+                position: relative;
+
+                label {
+                    font-family: 'IndieFlower';
+                    color: var(--black-color-light);
+                    font-size: 1.5rem;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+
+                input {
+                    width: 260px;
+                    margin: 0.5rem 0 0 0;
+                    padding: 0;
+                    border: 0;
+                    border-bottom: 1px solid var(--black-color-light);
+                    outline: 0;
+                    background: 0;
+                    font-family: 'IndieFlower';
+                    color: var(--black-color-light);
+                    text-align: right;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .image-upload-box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 5rem;
+
+            .instructions {
+                font-family: 'Aclonica';
+                color: var(--black-color-light);
+                margin-bottom: 0.5rem;
+            }
+
+            label {
+                width: 260px;
+                height: 44px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #333;
+                border-radius: 10px;
+                transition: 0.2s linear;
+                cursor: pointer;
+                color: #ddd;
+                font-size: 20px;
+                font-family: 'Aclonica';
+                pointer-events: auto;
+
+                &:hover {
+                    box-shadow: 0 0 5px var(--red-color);
+                }
+            
+                &:active {
+                    transform: scale(0.9);
+                }
+            }
+        }
+
+        .react-quill-box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 5rem;
+
+            .instructions {
+                font-family: 'Aclonica';
+                color: var(--black-color-light);
+                margin-bottom: 0.5rem;
+                font-size: 1.25rem;
+            }
+
+            .info {
+                font-family: 'IndieFlower';
+                color: var(--black-color-light);
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            p:not(.info) {
+                font-size: 1rem;
+            }
+
+            h1, h2, h3:not(.instructions), h4, h5, h6, li, em {
+                font-family: 'IndieFlower';
+                color: var(--black-color-light);
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+        }
+
+        .submit-box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-family: 'IndieFlower';
+                font-size: 2rem;
+                color: var(--black-color-light);
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .add-spot-page .container p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,108 @@
+.index-page {
+    height: 100vh;
+    min-height: 600px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-box {
+        height: 100%;
+        width: 90%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .links {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style-type: none;
+                margin-top: 2rem;
+
+                li {
+
+                    .link {
+                        font-family: 'IndieFlower';
+                        font-size: 2rem;
+                        color: var(--black-color-light);
+                        text-decoration: none;
+                        margin: 0 1rem;
+                        transition: 0.2s linear;
+                        position: relative;
+    
+                        &::after {
+                            content: '';
+                            width: 0%;
+                            height: 2px;
+                            background: var(--black-color-light);
+                            position: absolute;
+                            bottom: 5px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            transition: 0.2s linear;
+                        }
+
+                        &:active {
+                            color: red;
+                            text-shadow: 0 0 5px red;
+                        }
+    
+                        &:hover {
+                            color: var(--red-color);
+    
+                            &::after {
+                                width: 100%;
+                                background: var(--red-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*MEDIA QUERY*/
+@media (max-width: 700px) {    
+    .index-page .logo-image {
+        width: 200px;
+    }
+
+    .index-page li {
+        transform: scale(0.75);
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .index-page .main-box {
+        flex-direction: column;
+    }
+
+    .index-page .logo-image {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+@media (max-width: 350px) {
+    .index-page .links {
+        flex-direction: column;
+    }
+
+    .index-page li {
+        transform: scale(0.6);
+    }
+}

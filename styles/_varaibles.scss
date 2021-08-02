@@ -1,0 +1,18 @@
+//Below is how sass wants to have variables defined, but I had to go the typical css way as I am using the 'data-theme' attribute on document.documentElement to change variables dynamically. Sass variables wouldn't work like that.
+// $red-color: #F64545;
+// $black-color: #333;
+// $black-color-light: #444;
+// $white-color: #eee;
+
+:root {
+    --red-color: #F64545;
+    --black-color: #333;
+    --black-color-light: #444;
+    --white-color: #eee;
+}
+
+[data-theme='dark'] {
+    --black-color: #888;
+    --black-color-light: #999;
+    --white-color: #333;
+}

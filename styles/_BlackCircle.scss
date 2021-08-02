@@ -1,0 +1,33 @@
+.black-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--black-color);
+    transition: 0.2s linear;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    & > * {
+        transform: rotate(-25deg);
+        color: var(--white-color);
+        max-width: 97.5%;
+        height: 97.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        word-break: break-all;
+        text-align: center;
+        font-family: 'IndieFlower';
+        line-height: 1;
+        font-size: 0.75rem;
+    }
+}
+
+
+

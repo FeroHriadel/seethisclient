@@ -1,0 +1,92 @@
+.spot-preview-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+    .image-box {
+        margin-right: 2rem;
+    }
+
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h2 {
+            font-family: 'Aclonica';
+            font-size: 1.5rem;
+            color: var(--black-color-light);
+            margin-bottom: 1rem;
+        }
+
+        .icons-box {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .black-circle, .red-circle {
+                margin: 0.5rem;
+            }
+        }
+
+        .excerpt {
+            font-family: 'IndieFlower';
+            font-size: 1rem;
+            color: var(--black-color-light);
+            margin-top: 1rem;
+        }
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    .spot-preview-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .image-box {
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+
+        .text-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            h2 {
+                font-family: 'Aclonica';
+                font-size: 1.5rem;
+                color: var(--black-color-light);
+                margin-bottom: 1rem;
+                cursor: pointer;
+            }
+        }
+
+        .icons-box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .excerpt {
+            font-family: 'IndieFlower';
+            font-size: 1rem;
+            color: var(--black-color-light);
+            margin-top: 1rem;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}

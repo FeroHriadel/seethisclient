@@ -1,0 +1,46 @@
+.signin-page {
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 66%;
+            max-width: 666px;
+            min-width: 260px;
+            transform: translateX(-100px) rotate(-20deg);
+        }
+
+        .signup-form-container {
+            margin-right: 100px;
+        }
+    }
+}
+
+
+
+//MEDIA QUERY
+@media (max-width: 1160px) {
+    .signin-page img {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 750px) {
+    .signin-page img {
+        display: none;
+    }  
+
+    .signin-page .signup-form-container {
+        transform: translateX(50px);
+    }
+}
