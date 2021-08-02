@@ -5,6 +5,7 @@ import Menu from '../components/Menu';
 import Bricks from '../components/Bricks';
 import Switch from '../components/Switch';
 import ForgotPasswordForm from '../components/ForgotPasswordForm';
+import Image from 'next/image';
 
 
 
@@ -29,7 +30,7 @@ export default function Forgotpassword() {
             <Bricks />
 
             <div className='container'>
-                <img src='images/forgotpassword.svg' />
+                <Image src='images/forgotpassword.svg' />
                 <ForgotPasswordForm />
             </div>
         </div>

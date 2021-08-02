@@ -6,6 +6,7 @@ import Menu from "../components/Menu";
 import Link from 'next/link';
 import { Context } from '../context';
 import { wakeServerUp } from '../actions/userActions';
+import Image from 'next/image';
 
 
 
@@ -53,7 +54,7 @@ export default function Home() {
       <Menu />
 
       <div className='main-box'>      
-        <img className='logo-image' src='images/Logo.png' />
+        <Image className='logo-image' src='images/Logo.png' />
         <section className='text-box'>
 
           <Heading>

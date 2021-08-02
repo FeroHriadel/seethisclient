@@ -6,7 +6,7 @@ import Bricks from '../components/Bricks';
 import Switch from '../components/Switch';
 import UpdatePasswordForm from '../components/UpdatePasswordForm';
 import ProtectRoute from '../components/ProtectRoute';
-
+import Image from 'next/image';
 
 
 
@@ -20,7 +20,7 @@ export default function Updatepassword() {
             <Menu />
             <Bricks />
             <div className='container'>
-                <img src='images/updatepassword.svg' />
+                <Image src='images/updatepassword.svg' />
                 <UpdatePasswordForm />
             </div>
         </div>

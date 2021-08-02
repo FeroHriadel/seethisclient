@@ -5,6 +5,7 @@ import Menu from '../components/Menu';
 import Bricks from '../components/Bricks';
 import Switch from '../components/Switch';
 import SigninForm from '../components/SigninForm';
+import Image from 'next/image';
 
 
 
@@ -28,7 +29,7 @@ export default function Signin() {
             <Menu />
             <Bricks />
             <div className='container'>
-                <img src='images/signin.svg' />
+                <Image src='images/signin.svg' />
                 <SigninForm />
             </div>
         </div>

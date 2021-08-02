@@ -7,6 +7,7 @@ import Menu from "../../components/Menu";
 import BlackCircle from '../../components/BlackCircle';
 import Link from 'next/link';
 import ProtectAdminRoute from '../../components/ProtectAdminRoute';
+import Image from 'next/image';
 
 
 
@@ -58,7 +59,7 @@ export default function AdminIndexPage() {
                                 </li>
                             </Link>
                         </ul>
-                        <img src='images/admin.svg' />
+                        <Image src='images/admin.svg' />
                     </div>
                 </div>
             </div>
