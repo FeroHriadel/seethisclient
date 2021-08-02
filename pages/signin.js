@@ -9,6 +9,7 @@ import Image from 'next/image';
 
 
 
+
 export default function Signin() {
     //REDIRECT LOGGED-IN USERS AWAY
     const router = useRouter();
@@ -29,7 +30,15 @@ export default function Signin() {
             <Menu />
             <Bricks />
             <div className='container'>
-                <Image src='images/signin.svg' />
+                <div className='img'>
+                    <Image 
+                        src='/images/signin.svg' 
+                        alt='' 
+                        width='666' 
+                        height='400' 
+                        layout='intrinsic'
+                    />
+                </div>  
                 <SigninForm />
             </div>
         </div>

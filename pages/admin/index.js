@@ -59,7 +59,15 @@ export default function AdminIndexPage() {
                                 </li>
                             </Link>
                         </ul>
-                        <Image src='images/admin.svg' />
+                        <div className='img'>
+                            <Image 
+                                src='/images/admin.svg' 
+                                alt='' 
+                                width='666' 
+                                height='666' 
+                                layout='intrinsic'
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

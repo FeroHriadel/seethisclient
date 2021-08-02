@@ -30,7 +30,15 @@ export default function Signup() {
             <Menu />
             <Bricks />
             <div className='container'>
-                <Image src='images/signup.svg' />
+                <div className='img'>
+                    <Image 
+                        src='/images/signup.svg' 
+                        alt='' 
+                        width='666' 
+                        height='400' 
+                        layout='intrinsic'
+                    />
+                </div>
                 <SignupForm />
             </div>
         </div>

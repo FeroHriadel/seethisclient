@@ -30,7 +30,15 @@ export default function Forgotpassword() {
             <Bricks />
 
             <div className='container'>
-                <Image src='images/forgotpassword.svg' alt=''/>
+                <div className='img'>
+                    <Image 
+                        src='/images/forgotpassword.svg' 
+                        alt='' 
+                        width='666' 
+                        height='666' 
+                        layout='intrinsic'
+                    />
+                </div>
                 <ForgotPasswordForm />
             </div>
         </div>

@@ -54,7 +54,7 @@ export default function Home() {
       <Menu />
 
       <div className='main-box'>      
-        <Image className='logo-image' src='images/Logo.png' />
+        <Image className='logo-image' src='/images/Logo.png' width='400' height='300' />
         <section className='text-box'>
 
           <Heading>

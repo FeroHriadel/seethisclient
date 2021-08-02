@@ -20,7 +20,15 @@ export default function Updatepassword() {
             <Menu />
             <Bricks />
             <div className='container'>
-                <Image src='images/updatepassword.svg' />
+                <div className='img'>
+                    <Image 
+                        src='/images/updatepassword.svg' 
+                        alt='' 
+                        width='666' 
+                        height='666' 
+                        layout='intrinsic'
+                    />
+                </div>
                 <UpdatePasswordForm />
             </div>
         </div>

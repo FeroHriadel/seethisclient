@@ -40,8 +40,7 @@
                 }
             }
 
-            img {
-                width: 50%;
+            .img {
                 transform: rotate(-15deg);
             }
         }
@@ -52,7 +51,7 @@
 
 //MEDIA QUERY
 @media (max-width: 700px) {
-    .admin-index-page img {
+    .admin-index-page .img {
         display: none;
     }
 }
