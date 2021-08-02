@@ -25,8 +25,8 @@
     box-sizing: border-box;
   
     border: solid 2px transparent;
-    border-top-color: var(--red-color);
-    border-left-color: var(--red-color);
+    border-top-color: var(--red-color) !important;
+    border-left-color: var(--red-color) !important;
     border-radius: 50%;
   
     -webkit-animation: nprogress-spinner 400ms linear infinite;

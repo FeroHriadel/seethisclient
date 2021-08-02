@@ -95,3 +95,21 @@
         }
     }
 }
+
+
+@media (max-width: 800px) {
+    .spot-details-page .showcase h1 {
+        width: 90%;
+        font-size: 3rem;
+        word-wrap: break-word;
+    }
+}
+
+
+
+@media (max-width: 350px) {
+    .spot-details-page .showcase h1 {
+        font-size: 2rem;
+        word-wrap: break-word;
+    }
+}
