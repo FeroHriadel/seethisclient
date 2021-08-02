@@ -34,8 +34,8 @@ export default function Signin() {
                     <Image 
                         src='/images/signin.svg' 
                         alt='' 
-                        width='666' 
-                        height='400' 
+                        width='800' 
+                        height='800' 
                         layout='intrinsic'
                     />
                 </div>  

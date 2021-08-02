@@ -54,9 +54,17 @@ export default function Home() {
       <Menu />
 
       <div className='main-box'>      
-        <Image className='logo-image' src='/images/Logo.png' width='400' height='300' />
-        <section className='text-box'>
+        <div className='img'>
+          <Image 
+              src='/images/logo.png' 
+              alt='' 
+              width='400' 
+              height='300' 
+              layout='intrinsic'
+          />
+        </div>
 
+        <section className='text-box'>
           <Heading>
             Explore the 
             <span> hottest spots </span>

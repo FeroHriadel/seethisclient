@@ -74,8 +74,8 @@
 
 /*MEDIA QUERY*/
 @media (max-width: 700px) {    
-    .index-page .logo-image {
-        width: 200px;
+    .index-page .img {
+        margin-bottom: 4rem;
     }
 
     .index-page li {
@@ -90,8 +90,8 @@
         flex-direction: column;
     }
 
-    .index-page .logo-image {
-        margin-bottom: 2rem;
+    .index-page .img {
+        margin-bottom: 4rem;
     }
 }
 

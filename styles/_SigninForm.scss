@@ -1,16 +1,20 @@
 .signin-form-container {
-    width: 33%;
-    max-width: 333px;
-    min-width: 260px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    width: 280px;
+    min-width: 280px;
 
-    p {
+    .pre-heading {
         font-family: 'IndieFlower';
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: var(--black-color-light);
+        text-align: center;
+    }
+
+    .heading-main-box  {
+        margin-bottom: 3rem;
     }
 
     form {
@@ -66,6 +70,12 @@
             }
         }
 
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .message {
             margin-top: 2rem;
             font-family: 'IndieFlower';
@@ -76,6 +86,8 @@
     }
 }
 
+
+
 .signin-form-container input:focus + label span {
     transform: translateY(-100%);
 }
@@ -84,32 +96,19 @@
     transform: translateY(-100%);
 }
 
-.signin-form-container .buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    & > * {
-        transform: translateX(25px);
+
+@media (max-width: 700px) {
+    .signin-form-container .pre-heading {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
     }
 }
 
 
-
-@media (max-width: 1050px) {
-    .signin-form-container .buttons {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .button-square {
-            margin-left: 0px;
-        }
-    
-        & > * {
-            transform: translateX(0px);
-        }
+@media (max-width: 350px) {
+    .signin-form-container .pre-heading {
+        font-size: 1rem;
+        margin-bottom: 1rem;
     }
 }

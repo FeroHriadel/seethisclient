@@ -154,7 +154,7 @@ export default function SigninForm() {
     //RENDER
     return (
         <div className='signin-form-container'>
-            <p>Have an account?</p>
+            <p className='pre-heading'>Have an account?</p>
             
             <Heading>
                 Sign <span>in</span>

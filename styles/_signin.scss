@@ -4,40 +4,30 @@
     min-height: 600px;
     display: flex;
     justify-content: center;
-    align-items: center;
 
     .container {
+        height: 100%;
         width: 90%;
         max-width: 1000px;
         display: flex;
         justify-content: center;
         align-items: center;
+        transform: translateX(-100px);
 
         .img {
             transform: rotate(-20deg);
         }
+    }
+}
 
-        .signup-form-container {
-            margin-right: 100px;
+@media (max-width: 850px) {
+    .signin-page .container {
+        transform: translateX(0px);
+
+        .img {
+            display: none;
         }
     }
 }
 
 
-
-//MEDIA QUERY
-@media (max-width: 1160px) {
-    .signin-page .img {
-        margin-left: 100px;
-    }
-}
-
-@media (max-width: 750px) {
-    .signin-page .img {
-        display: none;
-    }  
-
-    .signin-page .signup-form-container {
-        transform: translateX(50px);
-    }
-}
