@@ -53,7 +53,7 @@ export default function Profile() {
                     {
                         !spots || spots.length < 1
                         ?
-                        <h2 className='subheading'>You haven't added any spots yet</h2>
+                        <h2 className='subheading'>You havent added any spots yet</h2>
                         :
                         <React.Fragment>
                             <h2 className='subheading'>Spots you shared: </h2>

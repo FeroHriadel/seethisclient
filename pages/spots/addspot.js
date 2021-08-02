@@ -218,7 +218,7 @@ export default function Addspot() {
                 <Switch />
 
                 <div className='container'>
-                    <p>Seen an interesting place you'd like to share?</p>
+                    <p>Seen an interesting place youd like to share?</p>
 
                     <Heading>
                         <span>Add </span> Spot
@@ -239,7 +239,7 @@ export default function Addspot() {
                         {
                             categories && categories.length < 1
                             ?
-                            <p>There don't seem to be any categories created yet</p>
+                            <p>There dont seem to be any categories created yet</p>
                             :
                             categories.map(c => (
                                 <RedCircle key={c._id}>
@@ -341,7 +341,7 @@ export default function Addspot() {
 
                     <section className='react-quill-box'>
                         <h3 className='instructions'>Please write something about your spot: </h3>
-                        <p className='info'>You can add images inside your article by clicking the editor's image icon</p>
+                        <p className='info'>You can add images inside your article by clicking the editors image icon</p>
                         <ReactQuill 
                             placeholder='Add text here...'
                             modules={addspot.modules} //see settings below

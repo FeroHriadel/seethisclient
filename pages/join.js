@@ -38,7 +38,7 @@ export default function Join() {
                     Why <span>join</span> us?
                 </Heading>
                 <p>
-                    Why sign up? So you can share the most interesting places you've seen in Slovakia with the community. The entire content of the page doesn't require signup. Feel free to browse and explore Slovakia's top spots. If you do join us, however, you'll be able to write articles and add photos of the places you think are worth seeing.
+                    Why sign up? So you can share the most interesting places youve seen in Slovakia with the community. The entire content of the page doesnt require signup. Feel free to browse and explore Slovakias top spots. If you do join us, however, youll be able to write articles and add photos of the places you think are worth seeing.
                 </p>
                 <div className='button-box'>
                         <ButtonSquare text='Sign up' action={() => router.push('/signup') } />

@@ -25,7 +25,7 @@ export default function Explore() {
                     <span>Explore </span> Spots
                 </Heading>
                 <p>
-                    We have a collection of the most beautiful spots in Slovkia. Whether you are a tourist, hiker, or just looking for an interesting place to see - we have it for you. Go to 'All Spots' to browse them all, or click 'Search Spots' to find a spot that matches your criteria.
+                    We have a collection of the most beautiful spots in Slovkia. Whether you are a tourist, hiker, or just looking for an interesting place to see - we have it for you. Go to All Spots to browse them all, or click Search Spots to find a spot that matches your criteria.
                 </p>
                 <div className='button-box'>
                         <ButtonSquare text='All Spots' action={() => router.push('/spots/allspots') } />
