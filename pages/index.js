@@ -26,9 +26,9 @@ export default function Home() {
 
 
   //WAKE SERVER UP
-  useEffect(() => {
-    wakeServerUp();
-  }, []);
+  // useEffect(() => {
+  //   wakeServerUp();
+  // }, []);     //This was actually not necessary, index.js is waking server up anyway
 
 
 
