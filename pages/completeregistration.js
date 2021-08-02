@@ -15,7 +15,7 @@ import { signup } from '../actions/userActions';
 
 
 
-export default function completeregistration() {
+export default function Completeregistration() {
     //CONTEXT
     const { state, dispatch } = useContext(Context);
 

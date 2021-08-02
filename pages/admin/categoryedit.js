@@ -11,7 +11,7 @@ import ProtectAdminRoute from '../../components/ProtectAdminRoute';
 
 
 
-export default function categoryedit() {
+export default function Categoryedit() {
     //GET CATEGORYID FROM URL
     const router = useRouter();
     const categoryId = router.query.categoryId;

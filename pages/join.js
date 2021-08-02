@@ -9,7 +9,7 @@ import Menu from "../components/Menu";
 
 
 
-export default function join() {
+export default function Join() {
     //ROUTER
     const router = useRouter();
 

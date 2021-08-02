@@ -12,7 +12,7 @@ import router from 'next/router';
 
 
 
-export default function spots() {
+export default function Spots() {
     //CONTEXT
     const { state, dispatch } = useContext(Context);
 

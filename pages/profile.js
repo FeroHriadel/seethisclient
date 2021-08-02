@@ -10,7 +10,7 @@ import SpotPreviewWithEdit from '../components/SpotPreviewWithEdit';
 
 
 
-export default function profile() {
+export default function Profile() {
     //GET USER
     const { state, dispatch } = useContext(Context);
     const [message, setMessage] = useState('Loading...');

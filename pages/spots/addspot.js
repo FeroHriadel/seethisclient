@@ -19,7 +19,7 @@ import { getTags, getTagById } from '../../actions/tagActions';
 
 
 
-export default function addspot() {
+export default function Addspot() {
     //CONTEXT
     const { state, dispatch } = useContext(Context);
         // const authtoken = state.user.token
@@ -364,7 +364,7 @@ export default function addspot() {
 
 
 
-addspot.modules = {
+Addspot.modules = {
     toolbar: [
         [{ header: '1' }, { header: '2' }, { header: [3, 4, 5, 6] }, { font: [] }],
         [{ size: [] }],
@@ -376,7 +376,7 @@ addspot.modules = {
     ]
 };
  
-addspot.formats = [
+Addspot.formats = [
     'header',
     'font',
     'size',

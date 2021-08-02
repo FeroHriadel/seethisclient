@@ -10,7 +10,7 @@ import ProtectRoute from '../components/ProtectRoute';
 
 
 
-export default function updatepassword() {
+export default function Updatepassword() {
 
     //RENDER
     return (

@@ -7,7 +7,7 @@ import ProtectAdminRoute from '../../components/ProtectAdminRoute';
 
 
 
-export default function categorycreate() {
+export default function Categorycreate() {
 
     //RENDER
     return (

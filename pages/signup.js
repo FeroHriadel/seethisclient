@@ -9,7 +9,7 @@ import SignupForm from '../components/SignupForm';
 
 
 
-export default function signup() {
+export default function Signup() {
     //REDIRECT LOGGED-IN USERS AWAY
     const router = useRouter();
     const { state, dispatch } = useContext(Context);

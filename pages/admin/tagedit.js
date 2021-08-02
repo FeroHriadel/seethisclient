@@ -11,7 +11,7 @@ import ProtectAdminRoute from '../../components/ProtectAdminRoute';
 
 
 
-export default function tagedit() {
+export default function Tagedit() {
     //GET TAGID FROM URL
     const router = useRouter();
     const tagId = router.query.tagId;

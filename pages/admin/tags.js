@@ -10,7 +10,7 @@ import { useRouter } from 'next/router';
 
 
 
-export default function tags() {
+export default function Tags() {
     //ROUTER
     const router = useRouter();
 

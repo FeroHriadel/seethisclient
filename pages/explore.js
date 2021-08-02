@@ -8,7 +8,7 @@ import Menu from "../components/Menu";
 
 
 
-export default function explore() {
+export default function Explore() {
     //ROUTER
     const router = useRouter();
 

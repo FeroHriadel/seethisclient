@@ -8,7 +8,7 @@ import ForgotPasswordForm from '../components/ForgotPasswordForm';
 
 
 
-export default function forgotpassword() {
+export default function Forgotpassword() {
     //REDIRECT LOGGED-IN USERS AWAY
     const router = useRouter();
     const { state, dispatch } = useContext(Context);

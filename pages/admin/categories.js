@@ -11,7 +11,7 @@ import { useRouter } from 'next/router';
 
 
 
-export default function categories() {
+export default function Categories() {
     //ROUTER
     const router = useRouter();
 

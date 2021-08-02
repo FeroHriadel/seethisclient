@@ -20,7 +20,7 @@ const ReactQuill = dynamic(() => import('react-quill'), {ssr: false});
 
 
 
-export default function editspot({ slug }) {
+export default function Editspot({ slug }) {
     //CONTEXT
     const { state, dispatch } = useContext(Context);
         // const authtoken = state.user.token
@@ -438,7 +438,7 @@ export default function editspot({ slug }) {
 
 
 
-editspot.modules = {
+Editspot.modules = {
     toolbar: [
         [{ header: '1' }, { header: '2' }, { header: [3, 4, 5, 6] }, { font: [] }],
         [{ size: [] }],
@@ -450,7 +450,7 @@ editspot.modules = {
     ]
 };
  
-editspot.formats = [
+Editspot.formats = [
     'header',
     'font',
     'size',

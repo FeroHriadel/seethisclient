@@ -12,7 +12,7 @@ import { FaChevronUp } from 'react-icons/fa'
 
 
 
-export default function searchspots() {
+export default function Searchspots() {
     //VALUES
     const [message, setMessage] = useState('Loading...');
     const [values, setValues] = useState({

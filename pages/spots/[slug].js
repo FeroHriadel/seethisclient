@@ -15,7 +15,7 @@ import { APP_NAME, DOMAIN } from '../../config';
 
 
 
-export default function spotdetails({ spot }) {
+export default function Spotdetails({ spot }) {
     //ROUTER
     const router = useRouter();
 

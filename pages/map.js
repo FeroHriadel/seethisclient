@@ -12,7 +12,7 @@ import dynamic from "next/dynamic";
 
 
 
-export default function map() {
+export default function Map() {
     //IMPORT MAP W/O SSR => SO IT HAS ACCESS TO WINDOW !!!
     const MapWithNoSSR = dynamic(() => import("../components/Map"), {
         ssr: false

@@ -8,7 +8,7 @@ import SigninForm from '../components/SigninForm';
 
 
 
-export default function signin() {
+export default function Signin() {
     //REDIRECT LOGGED-IN USERS AWAY
     const router = useRouter();
     const { state, dispatch } = useContext(Context);

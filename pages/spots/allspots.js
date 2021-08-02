@@ -9,7 +9,7 @@ import Navbar from '../../components/Navbar';
 
 
 
-export default function allspots({ initialSpots }) {
+export default function Allspots({ initialSpots }) {
     //VALUES (SPOTS & PAGINATION)
     const [data, setData] = useState(initialSpots); //data is getSpots() response, it has {spots: [], numberOfPages, page}
 

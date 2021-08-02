@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 
 
-export default function pleasesignin() {
+export default function Pleasesignin() {
     return (
         <div className='please-sign-in-page'>
             <Bricks />

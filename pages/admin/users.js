@@ -11,7 +11,7 @@ import { FaIdCardAlt } from "react-icons/fa";
 
 
 
-export default function users() {
+export default function Users() {
     //CONTEXT
     const { state, dispatch } = useContext(Context);
 
