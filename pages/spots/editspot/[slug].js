@@ -418,8 +418,8 @@ export default function Editspot({ slug }) {
                         <p className='info'>You can add images inside your article by clicking the editors image icon</p>
                         <ReactQuill 
                             placeholder='Add text here...'
-                            modules={editspot.modules} //see settings below
-                            formats={editspot.formats} //see settings below
+                            modules={Editspot.modules} //see settings below
+                            formats={Editspot.formats} //see settings below
                             value={body} //markup is stored in ‘body’state (and formData)
                             onChange={handleReactQuill}
                             style={{marginBottom: '4rem'}}
